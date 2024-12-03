@@ -160,28 +160,64 @@
         <div class="card-header bg-coat" id="headingTwo">
           <h5 class="mb-0">
             <button class="btn btn-link text-white" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-              Do I need a team to participate?
+              What should I bring to the event?
             </button>
           </h5>
         </div>
         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#faqAccordion">
           <div class="card-body">
-            Not at all! You can join as an individual and be matched with others, or come with your own team.
+            Bring your laptop, charger, creativity, and a collaborative spirit!
           </div>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- Registration Form Section -->
+  <section id="registration" class="container py-5">
+    <h2 class="text-center text-coat">Register Now</h2>
+    <form action="submit_form.php" method="POST">
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="name">Full Name</label>
+          <input type="text" class="form-control" id="name" name="name" required>
+        </div>
+        <div class="form-group col-md-6">
+          <label for="email">Email Address</label>
+          <input type="email" class="form-control" id="email" name="email" required>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="school">School Name</label>
+          <input type="text" class="form-control" id="school" name="school" required>
+        </div>
+        <div class="form-group col-md-6">
+          <label for="skill-level">Skill Level</label>
+          <select class="form-control" id="skill-level" name="skill-level" required>
+            <option value="beginner">Beginner</option>
+            <option value="intermediate">Intermediate</option>
+            <option value="advanced">Advanced</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="team">Preferred Team (Optional)</label>
+        <input type="text" class="form-control" id="team" name="team">
+      </div>
+      <button type="submit" class="btn btn-primary btn-block">Register Now</button>
+    </form>
+  </section>
+
   <!-- Footer Section -->
-  <footer class="text-white bg-dark text-center py-3">
-    <p>&copy; 2024 KSS Hack Club Hackathon | All Rights Reserved</p>
-    <p>Connect with us on <a href="https://twitter.com/KSSHackClub" class="text-white">Twitter</a> | <a href="https://facebook.com/KSSHackClub" class="text-white">Facebook</a> | <a href="https://instagram.com/KSSHackClub" class="text-white">Instagram</a></p>
+  <footer class="bg-dark text-white text-center py-4">
+    <p>&copy; 2024 KSS Hack Club. All rights reserved.</p>
+    <p>Follow us on <a href="https://www.instagram.com/ksshackclub" target="_blank" class="text-white">Instagram</a> and <a href="https://www.twitter.com/ksshackclub" target="_blank" class="text-white">Twitter</a>.</p>
   </footer>
 
   <!-- Bootstrap JS & jQuery -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
